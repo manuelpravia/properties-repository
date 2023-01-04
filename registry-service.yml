@@ -1,0 +1,17 @@
+server:
+  port: 8099
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-With-Eureka: true
+    fetch-Registry: true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+logging:
+  level:
+    com:
+      netflix:
+        eureka: OFF
+      discovery: OFF
