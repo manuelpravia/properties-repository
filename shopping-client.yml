@@ -1,0 +1,9 @@
+service:
+  name: shopping-service
+server:
+  port: 8092
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
