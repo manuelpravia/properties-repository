@@ -1,0 +1,9 @@
+service:
+  name: product-service
+server:
+  port: 8091
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
