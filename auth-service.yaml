@@ -9,4 +9,4 @@ eureka:
   admin-paths:
     paths:
       - uri: "/customer"
-        method: "DELETE"
+        method: "POST"
