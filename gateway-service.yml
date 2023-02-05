@@ -21,6 +21,18 @@ spring:
           uri: lb://customer-client
           predicates:
             - Path=/customers/**
+        - id: product-client
+          uri: lb://product-client
+          predicates:
+            - Path=/product/**
+        - id: shopping-client
+          uri: lb://shopping-client
+          predicates:
+            - Path=/shopping/**
+        - id: purchase-client
+          uri: lb://purchase-client
+          predicates:
+            - Path=/report/purchase-report/**
           filters:
             - AuthFilter
 
