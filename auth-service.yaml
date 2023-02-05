@@ -8,5 +8,5 @@ eureka:
       defaultZone: http://localhost:8099/eureka
   admin-paths:
     paths:
-      - uri: "/customers"
+      - uri: "/customer"
         method: "GET"
